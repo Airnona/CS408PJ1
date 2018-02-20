@@ -12,6 +12,7 @@ public class Driver {
 		
 		// -------------------------- Menu Loop -------------------------
 		SetArray setArray = new SetArray(arr1);
+		SetLinkedList setLL = new SetLinkedList(arr1, arr2);
 		
 		while(exit == false) {
 			System.out.println("\n -------------------------- Main menu:  -------------------------- \n\nPlease choose which program you wish to use. "
@@ -21,6 +22,24 @@ public class Driver {
 			
 			// --------------------------Java defined Sets --------------------------
 			if(choice == 1) { 
+				while(innerExit == false) {
+					System.out.println("Do you want to 1: Union the sets, 2: Intersect the sets, 3: Find the difference of the sets, or 4: return to main menu");
+					choice = sc.nextInt();
+					sc.nextLine();
+					
+					if (choice == 1){
+//						setLL.union();
+					}
+					else if(choice == 2)
+						setLL.intersect();
+					else if(choice == 3)
+						;
+//						setLL.difference();
+					else if(choice == 4)
+						break;
+				}
+			}
+			if(choice == 2) {
 				while(innerExit == false) {
 					System.out.println("Do you want to 1: Union the sets, 2: Intersect the sets, 3: Find the difference of the sets, or 4: return to main menu");
 					choice = sc.nextInt();
