@@ -24,6 +24,11 @@ public class SetArray {
 			bigger = this.arr;
 		}
 		
+		if(smaller.length == 0) {
+			System.out.println("The intersected array is empty.");
+			return;
+		}
+		
 		// -------------------------- Defaulting Contains array to a certain value to find actual useful values later
 		containsArr = new int[smaller.length];
 		for(int i = 0; i < containsArr.length; i++) {
