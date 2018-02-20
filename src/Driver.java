@@ -52,8 +52,7 @@ public class Driver {
 					else if(choice == 2)
 						setLL.intersect();
 					else if(choice == 3)
-						;
-//						setLL.difference();
+						setLL.difference();
 					else if(choice == 4)
 						break;
 				}

@@ -47,4 +47,8 @@ public class Node {
 	public void setLength(int newLength) {
 		this.length = newLength;
 	}
+	public void addNode(Node node) {
+		Node newNode = new Node(node.getValue(), this, null);
+		this.child = newNode;
+	}
 }
